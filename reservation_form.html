@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire de reservation en ligne d'hotel de luxe atypique pour les couples sans enfants.">
+    <title>Formulaire de reservation d'hotel de luxe en ligne</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8276700845.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="flexwrap spacebetween lateralpad">                                    <!-- HEADER -->
+        <nav class="navleft flexwrap spacebetween aligncenter">
+            <a href="./index.html" class="logoheader flexwrap aligncenter"><img src="./images/logo-noir.png" alt="Logo de 4 Eléments"></a>
+            <ul class="flexwrap spacebetween aligncenter">
+                <li><a href="./hotel_feu.html" title="Accès à la page Hotel Feu">Feu</a></li>
+                <li><a href="" title="Accès à la page Hotel Air">Air</a></li>
+                <li><a href="" title="Accès à la page Hotel Terre">Terre</a></li>
+                <li><a href="" title="Accès à la page Hotel Eau">Eau</a></li>
+                <li><a href="./galerie.html" title="Accès à la page Galerie">Galerie</a></li>
+            </ul>
+        </nav>
+        <nav class="navright flexwrap spacebetween aligncenter">
+            <ul class="flexwrap spacebetween aligncenter gap25">
+                <li><a href="" class="none" title="Accès au formulaire de contact">Contact</a></li>
+                <li><a href="https://instagram.com" class="flexwrap aligncenter" title="Accès au site Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com" class="flexwrap aligncenter" title="Accès au site Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            </ul>
+
+            <div class="flexwrap gap25 aligncenter">
+                <a class="smallbutton" href="./reservation_form.html" title="Boutton réserver">Reserver</a>
+                <a href="" class="none" title="Accès à mon compte">Se connecter</a>
+            </div>
+        </nav>
+        <div class="menu-burger">
+            <label class="bar" for="check">
+                <input type="checkbox" id="check">
+            
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+                <nav class="menu-lateral">
+                    <ul>
+                        <li><a href="./index.html" title="Accès à la page d'accueil">Accueil</a></li>
+                        <li><a href="./hotel_feu.html" title="Accès à la page Hotel Feu">Feu</a></li>
+                        <li><a href="" title="Accès à la page Hotel Air">Air</a></li>
+                        <li><a href="" title="Accès à la page Hotel Terre">Terre</a></li>
+                        <li><a href="" title="Accès à la page Hotel Eau">Eau</a></li>
+                    </ul>
+                </nav>
+            </label>  
+        </div>
+    </header>
+    <main>
+        <form action="" method="get" id="reservation-form" class="cont1200 flexwrap justcenter" novalidate>
+            <fieldset class="infosgen flexwrap spacebetween">                       <!-- INFOS GENERALES -->
+                <legend>Informations Générales</legend>
+                <div class="flexwrap flexcolumn">
+                    <label for="nom">Votre Nom :</label>
+                    <input type="text" name="nom" id="nom">
+                    <p class="p-error d-none" id="error-nom">Vous avez fait une bêtise...</p>
+                </div>
+                <div class="flexwrap flexcolumn">
+                    <label for="prenom">Votre Prénom :</label>
+                    <input type="text" name="prenom" id="prenom">
+                    <p class="p-error d-none" id="error-prenom">Vous avez fait une bêtise...</p>
+                </div>
+                
+                <div class="flexwrap flexcolumn">
+                    <label for="email">Votre adresse email :</label>
+                    <input type="email" name="email" id="email">
+                    <p class="p-error d-none" id="error-email">Vous avez fait une bêtise...</p>
+                </div>
+                <div class="flexwrap flexcolumn">
+                    <label for="tel">Votre numéro de téléphone :</label>
+                    <input type="tel" name="tel" id="tel">
+                    <p class="p-error d-none" id="error-tel">Vous avez fait une bêtise...</p>
+                </div>
+                <div class="flexwrap flexcolumn w100">
+                    <label for="postale">Votre adresse postale :</label>
+                    <input type="text" name="postale" id="postale">
+                    <p class="p-error d-none" id="error-postale">Vous avez fait une bêtise...</p>
+                </div>                
+            </fieldset>
+            <fieldset class="infosres flexwrap spacebetween">               <!-- INFOS SUR LA RESERVATION -->
+                <legend>Votre réservation</legend>
+                <div class="flexwrap flexcolumn">
+                    <label for="choix">Choix de la chambre :</label>
+                    <select name="choix" id="choix">
+                        <option value="Igloos">Igloos (500€/nuit)</option>
+                        <option value="Suite Laponie">Suite Laponie (850€/nuit)</option>
+                    </select>
+                    <p class="p-error d-none" id="error-choix">Vous avez fait une bêtise...</p>
+                </div>
+                <div class="flexwrap flexcolumn">
+                    <label for="nombre">Nombre de personnes (2 maximum) :</label>
+                    <input type="number" name="nombre" id="nombre" min="1" max="2">
+                    <p class="p-error d-none" id="error-nombre">Vous avez fait une bêtise...</p>
+                </div>
+                <div class="flexwrap flexcolumn">
+                    <label for="arrive">Date d'arrivée :</label>
+                    <input type="date" name="arrive" id="arrive">
+                    <p class="p-error d-none" id="error-arrive">Vous avez fait une bêtise...</p>
+                </div>
+                <div class="flexwrap flexcolumn">
+                    <label for="depart">Date de départ :</label>
+                    <input type="date" name="depart" id="depart">
+                    <p class="p-error d-none" id="error-depart">Vous avez fait une bêtise...</p>
+                </div>
+                
+            </fieldset>
+            <fieldset class="infosopt flexwrap spacebetween">                   <!-- OPTIONS ET SERVICES -->
+                <legend>Options et services supplémentaires</legend>
+                <div class="flexwrap flexcolumn formdiv30 aligncenter">
+                    <label for="Chauffeur (11€/jour)">Chauffeur (11€/jour)</label>
+                    <input type="checkbox" name="chauffeur" id="chauffeur" value="Chauffeur">
+                </div>
+                <div class="flexwrap flexcolumn formdiv30 aligncenter">
+                    <label for="Petit-déjeuner (15€/personne/jour)">Petit-déjeuner (15€/personne/jour)</label>
+                    <input type="checkbox" name="petitdej" id="petitdej" value="Petit-dejeuner">
+                </div>
+                <div class="flexwrap flexcolumn formdiv30 aligncenter">
+                    <label for="Visite guidée (20€)">Visite guidée (20€)</label>
+                    <input type="checkbox" name="visite" id="visite" value="Visite guidée">
+                </div>
+            </fieldset>
+            <fieldset class="repas flexwrap spacebetween w100">                     <!-- REPAS -->
+                <legend>Repas (25€ par repas par personne et par jour)</legend>
+                <div class="flexwrap flexcolumn formdiv30 aligncenter">
+                    <label for="midi">Midi</label>
+                    <input type="checkbox" name="midi" id="midi" value="Midi :">
+                </div>
+                <div class="flexwrap flexcolumn formdiv30 aligncenter">
+                    <label for="soir">Soir</label>
+                    <input type="checkbox" name="soir" id="soir" value="Soir :">
+                </div>
+                <div class="flexwrap flexcolumn formdiv30 aligncenter">
+                    <label for="ponctuel">Ponctuel*</label>
+                    <input type="checkbox" name="ponctuel" id="ponctuel" value="Ponctuel">
+                </div>
+                <p class="ast">*Dans ce cas le prix du repas ne sera pas comptabilisé dans la réservation mais sera dû directement auprès du service de restauration, prévenir la veille.</p>    
+            </fieldset>
+        
+            <fieldset class="infospref flexwrap spacebetween">                      <!-- RESTRICTIONS ALIMENTAIRES -->
+                <legend>Restrictions alimentaires</legend>
+                <div class="flexwrap flexcolumn formdiv30 aligncenter">
+                    <label for="veg">Vegan</label>
+                    <input type="checkbox" name="veg" id="veg" value="Vegan">
+                </div>
+                <div class="flexwrap flexcolumn formdiv30 aligncenter">
+                    <label for="vegetarien">Vegetarien</label>
+                    <input type="checkbox" name="vegetarien" id="vegetarien" value="Vegetarien">
+                </div>
+                <div class="flexwrap flexcolumn formdiv30 aligncenter">
+                    <label for="aucun">Aucunes</label>
+                    <input type="checkbox" name="aucun" id="aucun" value="Aucunes">
+                </div>
+            </fieldset>
+            <fieldset class="infosallergies flexwrap spacebetween">                         <!-- ALLERGIES -->
+                <legend>Allergies</legend>
+                <div class="flexwrap flexcolumn formdiv40 aligncenter">
+                    <label for="gluten">Gluten</label>
+                    <input type="checkbox" name="gluten" id="gluten" value="Gluten">                    
+                </div>
+                <div class="flexwrap flexcolumn formdiv40 aligncenter">
+                    <label for="lactose">Lactose</label>
+                    <input type="checkbox" name="lactose" id="lactose" value="Lactose">
+                </div>
+                <div class="flexwrap flexcolumn w100">
+                    <label for="autre">Autre (précisez) :</label>
+                    <input type="text" name="autre" id="autre">
+                </div>
+            </fieldset>
+            <button type="submit" class="bigbutton sub-but">Soumettre la réservation</button>
+        </form>
+
+        <div id="recap" class="recap flexwrap cont1200 gap50 d-none">                                     <!-- RECAP -->
+            <h3 class="textcenter w100">Résumé de votre réservation</h3>
+            <div class="recapgen w100  flexwrap flexcolumn gap25">
+                <h4>Informations générales</h4>
+                <p>Nom :</p>
+                <p>Prénom :</p>
+                <p>Email :</p>
+                <p>Tel :</p>
+                <p>Adresse postale :</p>
+            </div>
+            <div class="recapres w100 flexwrap flexcolumn gap25">
+                <h4>Votre réservation</h4>
+                <p>Chambre :</p>
+                <p>Pour x personnes</p>
+                <p>Date d'arrivée :</p>
+                <p>Date de départ :</p>
+            </div>
+            <div class="recapopt w100 flexwrap flexcolumn gap25">
+                <h4>Options et services supplémentaires</h4>
+                <p id="opt"></p>
+            </div>
+            <div class="recaprepas w100 flexwrap flexcolumn gap25">
+                <h4>Repas</h4> 
+                <p id="repas"></p>
+            </div>
+            <div class="recapalim w100 flexwrap flexcolumn gap25">
+                <h4>Restrictions Alimentaires</h4>
+                <p id="aliment"></p>
+            </div>
+            <div class="recapaler w100 flexwrap flexcolumn gap25">
+                <h4>Allergies</h4>
+                <p id="allergies"></p>
+
+            </div>
+            <p id="panier" class="w100">Total du séjour :</p>
+            <a href="" id="paybutton" class="smallbutton">Accèder au paiement</a>
+            <a href="" id="backbutton" class="flexwrap justcenter aligncenter">Modifier la réservation</a>
+        </div>
+    </main>                      
+   <footer class="flexwrap spacebetween">                           <!-- FOOTER -->
+        <div class="footcol footleft flexwrap gap35">
+            <img src="./images/logo-noir.png" alt="Logo de 4 Eléments">
+            <p>N'attendez plus pour vivre l'expérience 4 éléments le temps d'une nuit</p>
+            <ul class="flexwrap gap25">
+               <li><a href="https://instagram.com" class="flexwrap aligncenter" title="Accès au site Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com" class="flexwrap aligncenter" title="Accès au site Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footcol footmid flexwrap gap35">
+            <h4>Contact</h4>
+            <div class="infoscontact flexwrap gap10">
+                <a href="https://www.google.fr/maps" title="Accès à l'adresse postale de 4 Elements via le site google maps"><strong>Adresse :</strong> 8 avenue exemple</a>
+                <p><strong>Ouverture :</strong> Tous les jours de 9h à 20h30</p>
+                <address>
+                    <a href="tel:+3308280280002" title="Accès au numéro de téléphone de 4 Eléments"><strong>Tel :</strong> 33 08 280 28002</a>
+                </address>
+            </div>
+            <div class="smallbutton">
+                <a href="" title="Boutton réserver en ligne">Reserver en ligne</a>
+            </div>
+        </div>
+
+        <div class="footcol footright">
+            <ul class="flexwrap flexcolumn spacebetween">
+                <li><a href="" title="Accès aux mentions légales">Mentions légales</a></li>
+                <li><a href="" title="Accès aux crédits">Crédits</a></li>
+                <li><a href="" title="Accès aux conditions générales de vente">CGV</a></li>
+                <li><a href="" title="Accès à la politique de confidentialité">Confidentialité</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./app.js" defer></script>
+</body>
+</html>

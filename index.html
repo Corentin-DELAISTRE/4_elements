@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorez les éléments de la nature avec nos hôtels insolites, intégrés dans des environnements naturels exceptionnels. Réservez votre escapade unique dès maintenant et découvrez l'originalité de nos offres pour un séjour inoubliable.">
+    <title>4 Elements</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8276700845.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="flexwrap spacebetween lateralpad">                                    <!-- HEADER -->
+        <nav class="navleft flexwrap spacebetween aligncenter">
+            <a href="./index.html" class="logoheader flexwrap aligncenter"><img src="./images/logo-noir.png" alt="Logo de 4 Eléments"></a>
+            <ul class="flexwrap spacebetween aligncenter">
+                <li><a href="./hotel_feu.html" title="Accès à la page Hotel Feu">Feu</a></li>
+                <li><a href="" title="Accès à la page Hotel Air">Air</a></li>
+                <li><a href="" title="Accès à la page Hotel Terre">Terre</a></li>
+                <li><a href="" title="Accès à la page Hotel Eau">Eau</a></li>
+                <li><a href="./galerie.html" title="Accès à la page Galerie">Galerie</a></li>
+            </ul>
+        </nav>
+        <nav class="navright flexwrap spacebetween aligncenter">
+            <ul class="flexwrap spacebetween aligncenter gap25">
+                <li><a href="" class="none" title="Accès au formulaire de contact">Contact</a></li>
+                <li><a href="https://instagram.com" class="flexwrap aligncenter" title="Accès au site Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com" class="flexwrap aligncenter" title="Accès au site Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            </ul>
+
+            <div class="flexwrap gap25 aligncenter">
+                <a class="smallbutton" href="./reservation_form.html" title="Boutton réserver">Reserver</a>
+                <a href="" class="none" title="Accès à mon compte">Se connecter</a>
+            </div>
+        </nav>
+        <div class="menu-burger">
+            <label class="bar" for="check">
+                <input type="checkbox" id="check">
+            
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+                <nav class="menu-lateral">
+                    <ul>
+                        <li><a href="./index.html" title="Accès à la page d'accueil">Accueil</a></li>
+                        <li><a href="./hotel_feu.html" title="Accès à la page Hotel Feu">Feu</a></li>
+                        <li><a href="" title="Accès à la page Hotel Air">Air</a></li>
+                        <li><a href="" title="Accès à la page Hotel Terre">Terre</a></li>
+                        <li><a href="" title="Accès à la page Hotel Eau">Eau</a></li>
+                        <li><a href="./galerie.html" title="Accès à la page Galerie">Galerie</a></li>
+                    </ul>
+                </nav>
+            </label>  
+        </div>
+    </header>
+    
+    <video autoplay loop muted class="videohero">
+        <source src="./images/hero.mp4" type="video/mp4">
+    </video>
+    
+    <section class="hero mbot20">                      <!-- HERO -->
+        <div class="titreprincipal">
+            <h1>Hôtels 4 Eléments</h1>
+            <p class="slogan">Explorez l'exception, vivez l'extraordinaire...</p>
+        </div>
+        <div class="reservation flexwrap spacebetween justcenter gap35">
+            <h4>Rechercher une disponibilité</h4>
+            <div class="flexwrap spacebetween w100">
+                <div class="choix flexwrap flexcolumn">
+                    <label for="choix">Choisir un hotel</label>
+                    <select id="choix" name="choix">
+                        <option value="Feu">Hôtel Feu</option>
+                        <option value="Air">Hôtel Air</option>
+                        <option value="Terre">Hôtel Terre</option>
+                        <option value="Eau">Hôtel Eau</option>
+                    </select>
+                </div>
+                <div class="number flexwrap flexcolumn">
+                    <label for="number">Nbr de personnes</label>            
+                    <input type="number" id="number" name="number" min="1" max="12">
+                </div>
+                <div class="date flexwrap flexcolumn">
+                    <label for="date">Choisir une date d'arrivée</label>
+                    <input type="date" id="date" name="date" min="2024-02-22" max="2028-02-22" />
+                </div>
+            </div>
+            <div class="bigbutton reservbutton">
+                <a href="" title="Accès à la recherche d'une disponibilité">Chercher</a>
+            </div>
+        </div>
+    </section>
+
+    <article class="hotelfeu flexwrap spacebetween p300 mbot15">                   <!-- HOTEL FEU -->
+        <div class="description flexwrap aligncenter">
+            <h2>Hôtel Feu</h2>
+            <div>
+                <div class="flexwrap aligncenter gap10">
+                    <img src="./images/icon/map-pin.svg" alt="icone de punaise">
+                    <p>Finlande</p>
+                </div>
+                <p>
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-empty.svg" alt="icone étoile vide">
+                    <span class="legend">(325 avis)</span>
+                </p>
+            </div>
+            <p>
+                L'hôtel Feu ne se situe bien sûr pas sur un volcan, mais en Finlande. <br>Feu de la terre volcanique crachant non loin de là ses geysers, feu des volcans à l'horizon et, bien entendu, feu des aurores boréales que vous pourrez admirer tous les soirs par le toit vitré de votre chambre.
+            </p>
+            <div class="bigbutton">
+                <a href="" title="Boutton réserver">Reserver</a>
+            </div>
+        </div>
+
+        <div class="caroussel">
+            <div class="caroussel-slides">
+                <div class="caroussel-item">
+                    <img src="./images/igloos_focus.jpg" alt="Image montrant des igloos en verre dans une forêt enneigée">
+                </div>
+                <div class="caroussel-item">
+                    <img src="./images/boreal_maison.jpg" alt="Image montrant un chalet dans une forêt enneigée de nuit avec des aurores boréales dans le ciel">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="hotelair flexwrap spacebetween p300 mbot15">                  <!-- HOTEL AIR -->
+        <div class="caroussel">
+            <div class="caroussel-slides">
+                <div class="caroussel-item">
+                    <img src="./images/batiment_bleu.jpg" alt="Image un hôtel bleu au milieu d'une forêt">
+                </div>
+                <div class="caroussel-item">
+                    <img src="./images/pont_jungle.jpg" alt="Image d'un pont suspendu dans une forêt">
+                </div>
+            </div>
+        </div>
+
+        <div class="description flexwrap gap50">
+            <h2>Hôtel Air</h2>
+            <div>
+                <div class="flexwrap aligncenter gap10">
+                    <img src="./images/icon/map-pin.svg" alt="icone de punaise">
+                    <p>Brésil</p>
+                </div>
+                <p>
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-empty.svg" alt="icone étoile vide">
+                    <span class="legend">(325 avis)</span>
+                </p>
+            </div>
+            <p>
+                L'hôtel Air se situe à la frontière du Brésil et du Pérou.<br>
+                C'est un concept architectural innovant qui a permis une implantation à la cîme de la forêt pour offrir un panorama vertigineux et cotoyerchaque matin, de votre chambre (avec ou sans piscine), les oiseaux à votre réveil.
+            </p>
+            <div class="bigbutton">
+                <a href="" title="Boutton réserver">Reserver</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="hotelterre flexwrap spacebetween p300 mbot15">                   <!-- HOTEL TERRE -->
+        <div class="description flexwrap aligncenter">
+            <h2>Hôtel Terre</h2>
+            <div>
+                <div class="flexwrap aligncenter gap10">
+                    <img src="./images/icon/map-pin.svg" alt="icone de punaise">
+                    <p>Thaïlande</p>
+                </div>
+                <p>
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-empty.svg" alt="icone étoile vide">
+                    <span class="legend">(325 avis)</span>
+                </p>
+            </div>
+            <p>
+                L'hôtel Terre est situé dans des grottes naturelles en Thaïlande. Retaillées et aménagées avec beaucoup de soin, les chambres de l'hôtel vous offriront soit la fraîcheur et l'apaisement à près de vingt mètres de profondeur, soit un hâvre de paix ouvrant sur l'horizon de la mer au loin.
+            </p>
+            <div class="bigbutton">
+                <a href="" title="Boutton réserver">Reserver</a>
+            </div>
+        </div>
+
+        <div class="caroussel">
+            <div class="caroussel-slides">
+                <div class="caroussel-item">
+                    <img src="./images/caverne_chambre.jpg" alt="Image d'une chambre d'hôtel à l'interieur d'une caverne">
+                </div>
+                <div class="caroussel-item">
+                    <img src="./images/caverne_table.jpg" alt="Image d'une table de restaurant à l'entrée d'une grotte">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="hoteleau flexwrap spacebetween p300 mbot15">                  <!-- HOTEL EAU -->
+        <div class="caroussel">
+            <div class="caroussel-slides">
+                <div class="caroussel-item">
+                    <img src="./images/chambre_aquarium.jpg" alt="Image d'une chambre d'hôtel immergée sous la mer">
+                </div>
+                <div class="caroussel-item">
+                    <img src="./images/plongeur.jpg" alt="Image d'une personne faisant de la plongée">
+                </div>
+            </div>
+        </div>
+        <div class="description flexwrap gap50">
+            <h2>Hôtel Eau</h2>
+            <div>
+                <div class="flexwrap aligncenter gap10">
+                    <img src="./images/icon/map-pin.svg" alt="icone de punaise">
+                    <p>Île du Pacifique</p>
+                </div>
+                <p>
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-full.svg" alt="icone étoile pleine">
+                    <img src="./images/icon/star-empty.svg" alt="icone étoile vide">
+                    <span class="legend">(325 avis)</span>
+                </p>
+            </div>
+            <p>
+                L'hôtel Eau est situé sur une île de 2 kilomètres carrés très exactement équidistante de Vladivostok et de Los Angeles. C'est le milieu duPacifique. Vous y disposerez de votre plage, de votre bateau et de votre majordome privés. Votre chambre est un caisson immergé à deux mètres sous l'eau.
+            </p>
+            <div class="bigbutton">
+                <a href="" title="Boutton réserver">Reserver</a>
+            </div>
+        </div>
+    </article>
+
+    <section class="galerie p300 mbot15 flexwrap gap50">
+        <div class="titregalerie flexwrap gap25">
+            <h2>Galerie</h2>
+            <p>Découvrez notre magnifique galerie photos, capturant la beauté époustouflante de nos hôtels et des environnements naturels exceptionnels qui les entourent.</p>
+        </div>
+        <div class="imagesgrid">
+            <div><img src="./images/images-supplementaires/boreal_lac.jpg" alt="Image d'aurores boréales se refletant sur la surface d'un lac la nuit"></div>
+            <div><img src="./images/images-supplementaires/bungalow_mer.jpg" alt="Image de plusieurs bungalow sur pilotis au-dessus de la mer"></div>
+            <div><img src="./images/images-supplementaires/cabane_foret_vue_de_dessus.jpg" alt="Image d'une cabane dans une foret vue du dessus"></div>
+            <div><img src="./images/images-supplementaires/caverne_sur_mer.JPEG" alt="Image d'une table de bar à l'entrée d'une grotte au bord de la mer"></div>
+        </div>
+        <div class="bigbutton">
+            <a href="./galerie.html" title="Accès à la page galerie">Plus de photos</a>
+        </div>
+    </section>
+
+    <section class="p300 flexwrap spacebetween mbot15">                    <!-- CONCEPT -->
+        <article class="archiconcept concept flexwrap gap35">
+            <h3>Le concept</h3>
+            <div class="flexwrap gap25">
+                <img src="./images/concept.jpg" alt="Image d'une terrase devant un hôtel situé dans une forêt">
+                <p>
+                    Depuis l'ouverture de ses 4 hôtels en 2012, 4 Éléments s'est démarqué en proposant des établissements exceptionnels dans des lieux uniques, symbolisant les quatre éléments : terre, eau, air et feu. Ces hôtels insolites, construits dans des endroits inattendus à travers la planète, incarnent notre volonté de révolutionner le tourisme en intégrant luxe, aventure et vision à long terme. Chacun de nos établissements offre un environnement et un service uniques, alliant la rigueur de l'hôtellerie de luxe à une proximité quotidienne avec les habitants. Explorez les environs avec des guides experts tels que des ethnologues, astrophysiciens, géologues et climatologues. Ce que nous vous proposons n'est pas un simple "tour", mais une véritable révolution.
+                </p>
+            </div>
+        </article>
+
+        <article class="archiconcept architecture flexwrap gap35">
+            <h3>L'architecture</h3>
+            <div class="flexwrap gap25">
+                <p>
+                    L'architecture innovante constitue une étape supplémentaire vers l'exploration de l'Espace, représentant l'extension de notre civilisation vers ses aspects les plus avancés. S'immerger dans l'un de nos hôtels, c'est embrasser une expérience sensorielle où l'on peut se ressourcer au contact des matières représentatives des quatre éléments. C'est une opportunité de se découvrir en harmonie avec la terre, l'air, l'eau et le feu. Notre approche unique vise à transcender les frontières traditionnelles du voyage en offrant une expérience qui éveille les sens et connecte les visiteurs à la quintessence de chaque élément. En plongeant dans nos établissements, les clients sont invités à explorer l'intersection fascinante entre l'innovation architecturale etla nature environnante.
+                </p>
+                <img src="./images/architecture.jpg" alt="Image d'un jardin devant un hôtel de luxe">
+            </div>
+        </article>
+    </section>
+
+    <article class="creator flexwrap spacebetween p300 mbot15">             <!-- CREATOR -->
+        <div class="creatorleft flexwrap">
+            <h3>Le mot du créateur</h3>
+            <div class="flexwrap gap35">
+                <p>
+                    <span class="guillemets">“</span>L'architecture innovante représente une avancée vers l'exploration de l'Espace, symbolisant l'extension de notre civilisation vers ses plus grandes aspirations. S'immerger dans nos hôtels, c'est vivre une expérience sensorielle, se ressourcer au contact des matières des quatre éléments. C'est une découverte en harmonie avec la terre, l'air, l'eau et le feu, où chaque détail architectural offre une connexion profonde avec ces éléments fondamentaux. Les témoignages de nos visiteurs soulignent l'impact transformateur de cette expérience immersive, décrivant une reconnexion unique avec la nature et une redécouverte de soi au sein de cet environnement exceptionnel. Cette approche révolutionnaire redéfinit les attentes du voyage, offrant non seulement un hébergement luxueux, mais une véritable aventure sensorielle qui transcende les limites conventionnelles du tourisme.
+                </p>
+                <div class="creatorname">
+                    <h5><strong>Trinh Xuan Thuan</strong></h5>
+                    <p class="greentext">Co-fondateur de 4 Eléments</p>
+                </div>
+            </div>
+        </div>
+
+        <img src="./images/portrait_createur.jpg" alt="Portrait du créateur Trinh Xuan Thuan">
+    </article>
+
+    <footer class="flexwrap spacebetween">                          <!-- FOOTER -->
+        <div class="footcol footleft flexwrap gap35">
+            <img src="./images/logo-noir.png" alt="Logo de 4 Eléments">
+            <p>N'attendez plus pour vivre l'expérience 4 éléments le temps d'une nuit</p>
+            <ul class="flexwrap gap25">
+               <li><a href="https://instagram.com" class="flexwrap aligncenter" title="Accès au site Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com" class="flexwrap aligncenter" title="Accès au site Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footcol footmid flexwrap gap35">
+            <h4>Contact</h4>
+            <div class="infoscontact flexwrap gap10">
+                <a href="https://www.google.fr/maps" title="Accès à l'adresse postale de 4 Elements via le site google maps"><strong>Adresse :</strong> 8 avenue exemple</a>
+                <p><strong>Ouverture :</strong> Tous les jours de 9h à 20h30</p>
+                <address>
+                    <a href="tel:+3308280280002" title="Accès au numéro de téléphone de 4 Eléments"><strong>Tel :</strong> 33 08 280 28002</a>
+                </address>
+            </div>
+            <div class="smallbutton">
+                <a href="" title="Boutton réserver en ligne">Reserver en ligne</a>
+            </div>
+        </div>
+
+        <div class="footcol footright">
+            <ul class="flexwrap flexcolumn spacebetween">
+                <li><a href="" title="Accès aux mentions légales">Mentions légales</a></li>
+                <li><a href="" title="Accès aux crédits">Crédits</a></li>
+                <li><a href="" title="Accès aux conditions générales de vente">CGV</a></li>
+                <li><a href="" title="Accès à la politique de confidentialité">Confidentialité</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
